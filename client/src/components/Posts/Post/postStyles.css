@@ -1,0 +1,13 @@
+#postOptCont:hover #postOptDiv {
+    display: flex;
+}
+
+#postOptCont:hover #postOptArrow {
+    display: block;
+}
+
+#delBtn:hover #delIcon {
+    color: #ea2020;
+}
+
+

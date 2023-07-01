@@ -1,0 +1,24 @@
+#sidePostsDiv::-webkit-scrollbar {
+    display: none;
+}
+#sidePostDiv {
+    transition: 
+    transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s, 
+    opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comment_sec {
+    transition: 
+    transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s, 
+    opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 12px;
+
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comment_sec::-webkit-scrollbar {
+    display: none;
+}

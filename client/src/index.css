@@ -1,0 +1,33 @@
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+body {
+    background-color: #efeded;
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* body::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 25px
+}
+   */
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

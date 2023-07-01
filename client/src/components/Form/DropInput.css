@@ -1,0 +1,8 @@
+
+
+.FileBase_Input input[type="file" i]::-webkit-file-upload-button{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    opacity: 0;
+}
