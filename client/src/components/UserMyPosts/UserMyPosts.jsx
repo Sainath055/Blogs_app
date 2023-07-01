@@ -19,7 +19,6 @@ const UserMyPosts = () => {
       dispatch(getUserPosts(userId));
   }, []);
 
-  console.log(userPosts)
 
   if (!userPosts) {
     return (

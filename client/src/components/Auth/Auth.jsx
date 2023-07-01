@@ -8,6 +8,7 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { useGoogleLogin } from '@react-oauth/google';
 import { signup, signin } from '../../actions/auth';
+import LoaderCircle from '../LoaderCircle/LoaderCircle';
 
 const initialState = { firstName: '',lastName: '', 
 email: '', password: '',confirmPassword: '' }
@@ -21,6 +22,8 @@ const Auth = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isSignup, setIsSignup] = useState(false);
 
+  const [isLoading, setLoading] = useState(false);
+
   const handleShowPassword = () => {
     setShowPassword((prevshowPassword) =>
     !prevshowPassword);
@@ -32,11 +35,13 @@ const Auth = () => {
     if(isSignup) {
       if(formData.password === formData.confirmPassword) {
         dispatch(signup(formData, history))
+        setLoading(true)
       } else {
         alert(`Passwords doesnot match.`)
       }
     }else {
       dispatch(signin(formData, history))
+      setLoading(true)
     }
   };
   
@@ -71,6 +76,18 @@ const Auth = () => {
     },
     onError: () => console.log('Login Failed'),
   });
+
+  if (isLoading) {
+    // loading state
+    return (
+      <div className='w-full min-h-[500px] 
+      flex justify-center items-center bg-[#efeded]
+       top-0 z-10 '>
+        <LoaderCircle />
+      </div>
+    )
+  }
+
 
   return (
     <>

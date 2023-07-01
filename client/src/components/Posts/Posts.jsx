@@ -10,7 +10,12 @@ const Posts = ({ setCurrentId }) => {
   const {posts, isLoading } = useSelector((state) => state.posts);
 
 
-  if (!posts.length && !isLoading) return 'No posts Found';
+  if (!posts.length && !isLoading) {
+    return (
+      <p>No posts Found, Plz check the query</p>
+    ) 
+  }
+  
 
   return (
     isLoading ? 

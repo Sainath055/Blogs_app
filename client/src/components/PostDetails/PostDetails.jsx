@@ -14,9 +14,11 @@ import DownRecomModel from './DownPostModels/DownRecomModel';
 import Comments from './Comments/Comments';
 import SavePost from './SavePost/SavePost';
 
-const PostDetails = ({gg}) => {
-console.log(gg)
+const PostDetails = ( ) => {
+
   const user = JSON.parse(localStorage.getItem('profile'));
+  const currentPath = location.pathname;
+  console.log(currentPath)
 
   const [commentsLen, setCommentsLen] = useState();
 

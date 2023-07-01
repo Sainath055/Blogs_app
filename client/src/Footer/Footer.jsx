@@ -83,7 +83,7 @@ const Footer = () => {
           of the application anytime, anywhere.
         </p>
         <p className='text-[14px] text-gray-700'>
-          Project source code - <a href='https://www.google.com/' 
+          Project source code - <a href='https://github.com/Sainath055/blogs_app' 
           target='_blank'
           className='w-max underline hover:text-blue-600 '>Github</a>
         </p>
