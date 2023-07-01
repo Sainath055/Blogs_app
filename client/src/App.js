@@ -20,6 +20,8 @@ const App = () => {
 
   const [currentId, setCurrentId] = useState(null);
 
+  console.log(user)
+
   return (
     <BrowserRouter>
       <> 
@@ -35,7 +37,6 @@ const App = () => {
           render={() => <Home setCurrentId={setCurrentId} />}
           />
 
-          {/* <Route path="/posts/:id"  render={() => <PostDetails />} /> */}
           <Route
             path={"/posts/:id"}
             exact
@@ -45,8 +46,7 @@ const App = () => {
             }}
           />
 
-          <Route path="/auth" exact render={() => 
-            (!user ? <Auth /> : <Redirect to="/posts"/> )}/>
+          <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/posts" />)} />
 
           <Route path="/write" exact render={() => 
           <Form currentId={currentId} 
