@@ -55,7 +55,8 @@ const Footer = () => {
           I am currently seeking for new opportunities, and I'm eager 
           to contribute my skills and creativity to a dynamic team. If you're 
           interested in exploring more of my work and learning about how I 
-          can add value to your organization, please visit my <a href='https://my-portfolio-055.w3spaces.com/' 
+          can add value to your organization, please visit my <a 
+          href='https://sainath055.github.io/' 
           target='_blank'
           className='w-max underline text-gray-600
           hover:text-blue-600 text-[14px] font-semibold'>
